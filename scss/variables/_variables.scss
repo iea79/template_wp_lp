@@ -1,0 +1,81 @@
+/* Global variables */
+/* ======================================================================== */
+$main_font_family: "Open Sans";
+$main_color: #000;
+$main_line_height: 1.2;
+$main_font_size: 16px;
+
+$container_width: 80em;
+
+$footer_height: auto;
+
+// Color collection for elements
+$color_primary: #7b8287;
+$color_success: #36a566;
+$color_info: #03a9f4;
+$color_warning: #fca33e;
+$color_danger: #ff1a1a;
+$color_withe: #ffffff;
+
+$el-colors: (
+	primary: $color_primary, // color for .element__primary
+	success: $color_success, // color for .element__success
+	info: $color_info, // color for .element__info
+	warning: $color_warning, // color for .element__warning
+	danger: $color_danger, // color for .element__danger
+);
+
+/* Grid */
+/* ======================================================================== */
+$grid_padding: 20px;
+
+/* Form */
+/* ======================================================================== */
+// Input variables
+
+// Input color
+$input_color: $main_color;
+$input_bg_color: #fff;
+$input_border_color: #ddd;
+$input_placeholder_color: #ddd;
+
+// Input hover color
+$input_hover_color: #fff;
+$input_hover_bg_color: #fff;
+$input_hover_border_color: #ddd;
+$input_hover_placeholder_color: #ddd;
+
+// Input focus color
+$input_focus_color: #fff;
+$input_focus_bg_color: #fff;
+$input_focus_border_color: #ddd;
+$input_focus_placeholder_color: #ddd;
+
+// Input disabled color
+$input_disabled_color: #fff;
+$input_disabled_bg_color: #ccc;
+$input_disabled_border_color: #ccc;
+$input_disabled_placeholder_color: #fff;
+
+// Input error color
+$input_error_color: red;
+$input_error_bg_color: #fff;
+$input_error_border_color: red;
+$input_error_placeholder_color: red;
+
+// Button variables
+$btn_default_bg_color: #ddd;
+$btn_default_text_color: $main_color;
+$btn_contrast_text_color: $color_withe;
+$btn_default_bg_color_hover: #ccc;
+
+/* Breakpoints */
+$breakpoint-small: 480px !default;
+$breakpoint-medium: 760px !default;
+$breakpoint-large: 960px !default;
+$breakpoint-xlarge: 1200px !default;
+
+$breakpoint-mini-max: ($breakpoint-small - 1) !default;
+$breakpoint-small-max: ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max: ($breakpoint-large - 1) !default;
+$breakpoint-large-max: ($breakpoint-xlarge - 1) !default;

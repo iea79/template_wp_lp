@@ -1,0 +1,10 @@
+header.header
+    .header__content
+        .header__left
+            a.logo(href="/")
+                img(src="img/logo.png", alt="alt")
+        nav.header__right
+            ul.navbar
+                each navLink in [{name: 'Page1', href: ''},{name: 'Page2', href: ''},{name: 'Page3', href: ''},{name: 'Page4', href: ''},]
+                    li.navbar__item
+                        a.navbar__link(href= navLink.href)= navLink.name

@@ -1,0 +1,43 @@
+// Style for button and pseudo button for input and link
+.btn {
+	color: $btn_default_text_color;
+	font-family: $main_font_family;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 5px 15px 7px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	background-color: $btn_default_bg_color;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0.3s;
+	text-decoration: none;
+	&:hover {
+		background-color: #fff;
+		color: #000;
+		text-decoration: none;
+	}
+	&:focus,&:active {
+		background-color: transparentize(#fff, .2);
+		color: #000;
+	}
+	@each $status_el, $color_bg in $el_colors {
+		&_#{$status_el} {
+			background-color: $color_bg;
+			border-color: $color_bg;
+			color: $btn_contrast_text_color;
+			&:hover {
+				background-color: darken($color_bg, 7%);
+				color: $btn_contrast_text_color;
+			}
+			&:focus,&:active {
+				background-color: darken($color_bg, 10%);
+				color: $btn_contrast_text_color;
+			}
+		}
+	}	
+}

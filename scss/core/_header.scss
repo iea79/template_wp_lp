@@ -1,0 +1,21 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 1em 0;
+	background-color: #ddd;
+
+	&__content {
+		@extend .container_center;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

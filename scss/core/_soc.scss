@@ -1,0 +1,22 @@
+// Social link
+.soc {
+	float: left;
+	a {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #000;
+		text-align: center;
+		text-decoration: none;
+		@include trs(0.3s);
+		&:hover {
+			opacity: .8;
+		}
+		&:before {
+			content: 'soc';
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}

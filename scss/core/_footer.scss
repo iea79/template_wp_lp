@@ -1,0 +1,14 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	position: relative;
+	padding: 1em 0;
+	background-color: #ddd;
+
+	&__content {
+		@extend .container_center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
