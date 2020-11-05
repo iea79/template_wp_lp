@@ -165,6 +165,7 @@ function uploadYoutubeVideo() {
             let iframe = $('<iframe/>', {
                 'frameborder': '0',
                 'src': iframe_url,
+                'allow': "autoplay"
             })
 
             // Заменяем миниатюру HTML5 плеером с YouTube

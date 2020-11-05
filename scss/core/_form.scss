@@ -71,9 +71,18 @@ input[type=search]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
+/* Для Chrome */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	height: auto;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+/* Для Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
 }
 
 // Input checkbox and radio ===============================================
